@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Anton-Regular', sans-serif;
+    src: url(/HTML/1-综合案例/GoogleFonts/Anton-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* 标准盒子 */
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/渐变背景.png)no-repeat;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.menu-navbar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+}
+
+.menu-navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.two-navbar {
+    margin-left: 1200px;
+}
+
+
+.three-navbar {
+    margin-left: 50px;
+}
+
+.fisrt-navbar {
+    margin-left: 120px;
+}
+
+.sup-menu ul li {
+    transform: all o.3s;
+    /* opacity: 0; */
+}
+
+.menu-navbar {}
+
+.menu-navbar ul li:hover .sup-menu {
+    display: block;
+    position: absolute;
+    left: 130px;
+    top: 100%;
+    background-color: #470303;
+}
+
+
+.menu-navbar>ul li:hover .sub-nav {
+    display: block;
+    position: absolute;
+    left: 1400px;
+    top: 100%;
+    background-color: #470303;
+}
+
+.three-navbar {
+    display: inline-block;
+    transform: translateY(10px);
+}
+
+ul li {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+
+}
+
+i {
+    color: white;
+}
+
+ul li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 10%;
+    margin-left: 110px;
+}
+
+.solid {
+    color: rgb(0, 0, 0);
+    height: 2px;
+    border: solid 1px rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+}
+
+.content ul li i {
+    transform: translateY(-38px);
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.hr-solid {
+    transform: translateY(30px);
+    color: rgb(0, 0, 0);
+    height: 2px;
+    border: solid 1px rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+}

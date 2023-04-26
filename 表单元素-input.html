@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <form action="url.php" method="post" name="#">
+        <!-- 文本框 用户可以在里面输入内容 -->
+        账号：<input type="text" value="请输入用户名" name="username" maxlength="9" ><br>
+        <!-- 密码 输入的密码会被隐藏 用户看不见 -->
+        密码：<input type="password" name="pwd" maxlength="10"><br>
+        <!-- radio 单选按钮 可以实现多选一 name 在这里是指表单名字 在这里名字属性必须一样 才能实现多选-->
+        <!-- 单选框和复选框都可以使用checked属性 当页面打开的时候就默认选择这个按钮 -->
+        性别：<input type="radio" name="sex" value="男" checked="checked">男 <input type="radio" name="sex" value="女" checked="checked">女<br>
+        <!-- 复选框 可以实现多选 -->
+        爱好：<input type="checkbox" name="hobby" value="睡觉" checked="checked">睡觉 <input type="checkbox" name="hobby" value="吃饭" checked="checked"> 吃饭 <input type="checkbox" name="hobby" value="打豆豆" >
+        打豆豆<br>
+        <!-- 普通按钮 button 后期可以配合javascript来使用 -->
+        <input type="button" value="获取验证码" name="get code"><br>
+        <!-- 点击重置按钮 可以把表单里面选择的项 重置默认开始状态 -->
+        <input type="reset" value="重置数据" name="reset date"><br>
+        <!-- 点击提交按钮  可以把form里面的表单数据 里面的值提交给后台服务器 -->
+        <input type="submit" value="提交数据" name="submit date"><br>
+        <!--文件域 使用场景 可以选择文件上传 -->
+        <input type="file" value="上传文件" name="upload file">
+        <!-- 图片 image用图片的形象定义按钮 -->
+        <input type="image" value="提交" name=" uplocad images">
+        
+
+        
+    </form>
+</body>
+</html>

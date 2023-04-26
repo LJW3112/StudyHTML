@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面表单</title>
+    <link rel="stylesheet" href="login page.css" type="" media="all">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="">
+    <style type="">
+        @import url();
+
+    .color-pink{color: black; background: white; font: medium helvetica;  size: 10px;}
+    .color-red{color: rgb(199, 0, 0);
+    }
+
+    table{
+        /* 外边距  自动适配*/
+        margin: auto;
+         /* 内边距 */
+        padding: 10px;
+        /* 边实线 粗细大小 */
+        border: solid black 1px;
+        /* 边线圆角 */
+        border-radius: 5%;
+    }
+        #panda-chewing{
+        display: flex;
+        margin:0 auto;
+        height: 150px;
+        width: 150px;
+        position: relative;
+    
+   } 
+   
+   body{
+    /* 加载图片 背景图不平铺 */
+    /* background: url(../images/背景.jpg) no-repeat center center;  */
+    /* 让背景图基于容器大小 */
+    background-size: cover;
+    /* 但内容大于图片高度时  背景图响度于viewport固定  */
+    background-attachment: fixed;
+    /* 设置背景颜色 图片加载过程中会显示背景色 */
+    background-color: whitesmoke;
+    /* 颜色为烟白色 */
+   }
+/* bottom:底部/button：按钮 这里设置每行有实线*/
+   td{
+    border-bottom: solid 1px black;
+   }
+
+   .bamboo{
+   height: 1000px;
+
+   }
+   
+</style>
+
+<body>
+
+    <!-- <i class="fa fa-window-close"></i> -->
+    <!-- i指的是引用图标 fa是类 引用外部库 -->
+
+    <!-- 'table>tr>td*2  option*10' '输入元素标签再乘相应的数量就可以快速生成元素标签' -->
+    <!-- disabled禁止点击-->
+
+    <table align="center" border="0" cellspacing="0" cellpadding="0 ">
+        <form action="URL" method="get" name="state">
+            <thead>
+                <center>
+                    <h1 class=" color-pink"><i class="fa fa-space-shuttle"></i> &nbsp;欢迎-曲率引擎</h1>
+                </center>
+                <tr>
+                    <td>性别:</td>
+                    <td><label for="boy"><i class="fa fa-genderless"
+                                style="color: rgb(255, 0, 0);"></i><strong>男</strong></label><input type="radio"
+                            value="男" name="gender" id="boy">
+                    </td>
+                    <td><label for="girl"><i class="fa fa-mars"
+                                style="color: pink;"></i><strong>女</strong></label><input type="radio" value="女"
+                            name="gender" id="girl"></td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>出生：</td>
+                    <td>
+                        <select name="age" id="年份">
+                            <option value="年份" name="age" disabled selected>--请选择年份--</option>
+                            <option value="年份" name="age">1900年</option>
+                            <option value="年份" name="age">1910年</option>
+                            <option value="年份" name="age">1920年</option>
+                            <option value="年份" name="age">1930年</option>
+                            <option value="年份" name="age">1940年</option>
+                            <option value="年份" name="age">1950年</option>
+                            <option value="年份" name="age">1960年</option>
+                            <option value="年份" name="age">1970年</option>
+                            <option value="年份" name="age">1980年</option>
+                            <option value="年份" name="age">1990年</option>
+                            <option value="年份" name="age">2000年</option>
+                            <option value="年份" name="age">2001年</option>
+                            <option value="年份" name="age">2002年</option>
+                            <option value="年份" name="age">2003年</option>
+                        </select>
+                    <td align="left">
+                        <select name="month" id="月份">
+                            <Option value="月份" name="month" disabled selected>--请选择出生月份--</Option>
+                            <option value="月份" name="month">1月</option>
+                            <option value="月份" name="month">2月</option>
+                            <option value="月份" name="month">3月</option>
+                            <option value="月份" name="month">4月</option>
+                            <option value="月份" name="month">5月</option>
+                            <option value="月份" name="month">6月</option>
+                            <option value="月份" name="month">7月</option>
+                            <option value="月份" name="month">8月</option>
+                            <option value="月份" name="month">9月</option>
+                            <option value="月份" name="month">10月</option>
+                            <option value="月份" name="month">11月</option>
+                            <option value="月份" name="month">12月</option>
+                        </select>
+                    <td>
+                        <select name="day" id="日">
+                            <option value="日" name="day" disabled selected>--请选择出生日期--</option>
+                            <option value="日" name="day">1日</option>
+                            <option value="日" name="day">2日</option>
+                            <option value="日" name="day">3日</option>
+                            <option value="日" name="day">4日</option>
+                            <option value="日" name="day">5日</option>
+                            <option value="日" name="day">6日</option>
+                            <option value="日" name="day">7日</option>
+                            <option value="日" name="day">8日</option>
+                            <option value="日" name="day">9日</option>
+                            <option value="日" name="day">10日</option>
+                            <option value="日" name="day">11日</option>
+                            <option value="日" name="day">12日</option>
+                            <option value="日" name="day">13日</option>
+                            <option value="日" name="day">14日</option>
+                            <option value="日" name="day">15日</option>
+                            <option value="日" name="day">16日</option>
+                            <option value="日" name="day">17日</option>
+                            <option value="日" name="day">18日</option>
+                            <option value="日" name="day">19日</option>
+                            <option value="日" name="day">20日</option>
+                            <option value="日" name="day">21日</option>
+                            <option value="日" name="day">22日</option>
+                            <option value="日" name="day">23日</option>
+                            <option value="日" name="day">24日</option>
+                            <option value="日" name="day">25日</option>
+                            <option value="日" name="day">26日</option>
+                            <option value="日" name="day">27日</option>
+                            <option value="日" name="day">28日</option>
+                            <option value="日" name="day">29日</option>
+                            <option value="日" name="day">30日</option>
+                            <option value="日" name="day">31日</option>
+                        </select>
+                <tr colspan="4">
+                    <td><label for="area">所在区域：</label></td>
+                    <td align="left"><input type="text" name="area" id="area" placeholder="所在区域" required></td>
+                    <!-- placeholder是占位符 required限制必须输入字符-->
+                </tr>
+                <tr>
+                    <td>婚姻状态：</td>
+                    <td> <label for="schon"><i class="fa fa-heart" style="color: red;"></i>已婚</label> <input
+                            type="radio" name="state" id="schon"></td>
+                    <td><label for="un"><i class="fa fa-heart-o" style="color: rgb(24, 23, 9) ;"></i>未婚</label> <input
+                            type="radio" name="state" id="un"></td>
+                    <td><label for="leave"><i class="fa fa-heartbeat" style="color: rgb(56, 15, 1);"></i>离婚</label>
+                        <input type="radio" name="state" id="leave">
+                    </td>
+                </tr>
+                <tr>
+                    <td>学历：</td>
+                    <td>
+                        <select name="eduction background" id="educiton">
+                            <option value="学历" selected="selected">--请选择你的学历--</option>
+                            <option value="学历">研究生</option>
+                            <option value="学历">本科</option>
+                            <option value="学历">大专</option>
+                            <option value="学历">高中</option>
+                            <option value="学历">初中</option>
+                        </select>
+                <tr>
+                    <td>喜欢类型：</td>
+                    <td><label for="cute">可爱型<input type="checkbox" id="cute" checked="checked"> </label></td>
+                    <td><label for="mercy lady">御姐型<input type="checkbox" id="mercy lady" checked="checked"></label>
+                    </td>
+                    <td><label for="soft">温柔型<input type="checkbox" id="soft" checked="checked"></label></td>
+                </tr>
+                <tr>
+                    <td>自我介绍：</td>
+                    <td colspan="4">
+                        <textarea name="textarea" id="textarea" cols="80" rows="10" placeholder="介绍自己" required
+                            style="resize:none"></textarea>
+                        <!-- 加入css-style固定文本域的大小 没有样式 -->
+                    </td>
+                </tr>
+                <tr colspan="4">
+                    <td>&nbsp;</td>
+                    <td> <input type="submit" value="免费注册" name="get date"> </td>
+                    <td> <input type="reset" value="重置数据" name="reset date"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="checkbox" value="勾选" name="option" checked="checked"> 我已同意注册条款和会员加入标准
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="#" target="_blank">已是会员 立即注册</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <h2 class="color-red">我承诺</h2>
+                            </li>
+                            <li>年满18岁且单身</li>
+                            <li>秉承着严谨的态度</li>
+                            <li>真诚众里寻他/她千百度</li>
+                        </ul>
+                <tr>&nbsp;</tr>
+                <tr>
+                    <div class="picture-bamboo">
+                        <span><img src="../images/bamboo.png" alt="bamboo" title="竹子" align="left"></span>
+                        <span><img src="../images/bamboo01.png" alt="bamboo" title="竹子" align="right"></span>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <span id="panda-chewing"><img src="../images/panda-chewing.png" alt="panda-chewing"
+                                title="可爱的小熊猫吃竹子"></span>
+                </tr>
+                </td>
+                </tr>
+                </td>
+                </td>
+                </td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+</body>
+
+</html>

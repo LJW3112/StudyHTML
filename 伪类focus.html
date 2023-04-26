@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="">
+
+    @import url(Switch.css) all;
+    @import url(Switch.css) print;
+    @import url(Switch.css) screen;
+    <style>
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+
+        a :link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        a:active {
+            color: greenyellow;
+        }
+
+        input:focus {
+            background-color: pink;
+            color: red;
+        }
+
+        /* 后代选择器 */
+        .nav span {
+            color: gray;
+        }
+
+        /* 子选择器 */
+        .nav>span {
+            color: red;
+        }
+
+        /* 集中选择器 */
+        h1,
+        span,
+        a {
+            font-weight: lighter;
+        }
+
+        /* 伪类选择器 五大类选择器 带冒号的就是伪类选择器*/
+        /* ：link,:visited,:focus,:hover,:active. */
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <h1>1</h1>
+    <h1>2</h1>
+    <div class="nav"><span>2</span><span>2</span></div>
+    <span>1</span><span>2</span>
+    <a href="https://baidu.com/">百度</a>
+</body>
+
+</html>

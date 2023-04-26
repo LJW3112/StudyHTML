@@ -1,0 +1,96 @@
+:root {
+    --color-primary: #ed7f09;
+    --color-white: #e9e9e9;
+    --color-black:#141d28;
+    --color-black-1:#212b38;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* 标准盒子 */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo{
+    color:var(--color-white);
+    font-size: 38px;
+}
+
+.logo  span {
+    color:var(--color-primary)
+}
+
+.memu-bar{
+background-color: var(--color-black);
+height: 80px;
+width: 100%;
+/* 弹性布局效果 */
+display: flex;
+/* 均匀分配每个元素首个元素放置于起点，末尾元素放置于终点。 */
+justify-content: space-between;
+align-items: center;
+padding: 0 5%;
+/* 相对定位  */
+position: relative;
+}
+
+.memu-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.memu-bar ul li{
+    /* width: 120px; */
+    height: 10 30px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.memu-bar ul li a{
+    font-size: 20px;
+    color: var(--color-white);
+    /* 取消A标签下划线 */
+    text-decoration: none;
+    transform: all 0.3s;
+}
+
+/* 写个事件 */
+.memu-bar ul li a:hover{
+    color: var(--color-primary);
+}
+
+.fas{
+    float: right;
+    margin-top: 3px;
+}
+/* 让下拉列表平铺 */
+.dropdown-memu{
+    display: none;
+}
+
+.memu-bar ul li a:hover.dropdown-memu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.memu-bar ul li a:hover.dropdown-memu ul{
+    display: block;
+    margin: 10px;
+}
+
+.memu-bar ul li a:hover.dropdown-memu ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-memu-1{
+    dis
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .content {
+            /* 窗口视角宽度100 */
+            width: 100vw;
+            /* 窗口视角高度100 */
+            height: 100vh;
+            /* 设置背景图片 居中 不重复 */
+            background: url(../images/背景.jpg)center center no-repeat;
+            /* 背景图形大小覆盖 */
+            background-size: cover;
+        }
+        #rainBox{
+            position: fixed;
+            width: 100vw;
+            height:100vh;
+            /* 不阻止其他元素事件触发 */
+            pointer-events: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="rainBox"></div>
+    </div>
+
+    <script>
+        const box=document.getElementById('rainBox');
+    </script>
+</body>
+
+</html>
